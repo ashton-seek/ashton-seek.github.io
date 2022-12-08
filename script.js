@@ -44,14 +44,14 @@ function validatePassword() {
 form.addEventListener("submit", handleFormSubmission);
 
 function handleFormSubmission(event) {
-  event.preventDefault();
+  //event.preventDefault();
   validatePassword();
   form.reportValidity();
   if (form.checkValidity() === false) {
     // Handle invalid form
   } else {
     // On a production site do form submission.
-    alert("Signing in!");
-    signinButton.disabled = "true";
+    //alert("Signing in!");
+    //signinButton.disabled = "true";
   }
 }
